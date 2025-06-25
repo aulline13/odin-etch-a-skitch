@@ -9,7 +9,7 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -30,4 +30,14 @@ html, body {
     width: 32px;
     height: 32px;
     color: rgb(93, 40, 40);
+}
+
+.new-grid-button {
+  background-color: #04AA6D; /* Green */
+  border: 2px solid #04AA6D; /* Green */
+  border-radius: 12px;
+  padding: 16px 32px;
+  color: white;
+  text-align: center;
+  font-size: 16px;
 }
