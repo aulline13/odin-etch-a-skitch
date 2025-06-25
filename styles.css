@@ -14,9 +14,9 @@ html, body {
 }
 
 .container-grid {
-    width: 500px;
-    height: 500px;
-    max-width: 500px;
+    width: 512px;
+    height: 512px;
+    max-width: 512px;
     display: flex;
     flex-direction: column;
     justify-content: center;
