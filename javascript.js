@@ -14,7 +14,7 @@ function createDivGrid(userInput) {
 
 createDivGrid(defaultNumberOfSquares);
 
-let divGrid = document.querySelectorAll(".div-grid")
+let divGrid = document.querySelectorAll(".div-grid");
 
 function getRandomRGB() {
     let r = Math.floor(Math.random() * 256); // Random between 0-255
@@ -31,19 +31,19 @@ function changeColorOnHover() {
 })
 }
 
-changeColorOnHover()
+changeColorOnHover();
 
 const newGridButton = document.querySelector(".new-grid-button")
 
 newGridButton.addEventListener("click", () => {
-    let numberOfSquares = prompt("Enter the number of squares (0-100) per side for the new grid:", `${defaultNumberOfSquares}`)
+    let numberOfSquares = prompt("Enter the number of squares (0-100) per side for the new grid:", `${defaultNumberOfSquares}`);
     numberOfSquares = +numberOfSquares;
     if (numberOfSquares > 100 || isNaN(numberOfSquares)) {
-        alert("Value entered is greater than 100 or is not a number. Please click the button again to enter a new value.")
+        alert("Value entered is greater than 100 or is not a number. Please click the button again to enter a new value.");
     }
     else {
         divGrid.forEach((div) => {
-            containerGrid.removeChild(div)
+            containerGrid.removeChild(div);
         }) 
         createDivGrid(numberOfSquares);
         divGrid = document.querySelectorAll(".div-grid");
